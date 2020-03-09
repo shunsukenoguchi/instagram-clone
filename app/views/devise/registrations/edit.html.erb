@@ -12,6 +12,10 @@
             <%= f.label :email, "メールアドレス" %>
             <%= f.email_field :email, autofocus: true, class: "form-control" %>
           </div>
+          <div class="form-group">
+            <%= f.label :email, "ユーザーネーム" %>
+            <%= f.email_field :user_name, autofocus: true, class: "form-control" %>
+          </div>
 
           <div class="form-group">
             <%= f.label :password, "パスワード" %>
