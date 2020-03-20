@@ -41,9 +41,16 @@ class PostsController < ApplicationController
   def set_post
     @post = Post.find_by(id: params[:id])
   end
+  def search
+    post_search = Post.new(params_post_search)
+    @posts = post_search.execute
+  end
 
   private
     def post_params
       params.require(:post).permit(:caption, photos_attributes: [:image]).merge(user_id: current_user.id)
+    end
+    def params_post_search
+      params.permit(:search_user_name)
     end
 end
