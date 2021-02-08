@@ -59,7 +59,7 @@ gem 'jquery-rails'
 #Devise 4.0 works with Rails 4.1 onwards. Add the following line to your Gemfile:
 gem 'devise'
 
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 gem "mini_magick"
 gem 'ransack'
 
